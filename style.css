@@ -1,0 +1,86 @@
+/* 2E2C2F */
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #000;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+.sidebar
+{
+    grid-column: 1;
+    grid-row: 1/-1;
+    grid-template-columns: 1fr;
+    background-color: #F0EC57;
+}
+
+.logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    /* justify-content: center; */
+    gap: 10px;
+    margin-top: 17px;
+    margin-left: 21px;
+    margin-bottom: 60px;
+
+}
+
+.sidebar #quickLinks, #help
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    gap: 10px;   
+}
+
+#quickLinks  > div, #help > div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+}
+
+#quickLinks > div:hover, #help > div:hover
+{
+    transform: scale(1.09);
+}
+
+#help
+{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.sidebar a
+{
+    text-decoration: none;
+    color: black;
+    text-shadow: -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
