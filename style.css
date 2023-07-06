@@ -276,7 +276,15 @@ body
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* background-image: linear-gradient(rgba(240, 236, 87, 0.8), rgba(240, 236, 87, 0.5)) */
 
+}
+
+.card:hover
+{   
+    box-shadow: -5px 0 0px #F0EC57;
+    transform: scale(1.05);
 }
 
 .card_container
@@ -303,6 +311,7 @@ body
 {
     font-family: sans-serif;
     margin-left: 22px;
+    margin-right: 22px;
     
 }
 
@@ -314,9 +323,126 @@ body
     justify-content: flex-end;
     margin-top: auto;
     margin-right: 12px;
+    margin-bottom: 3px
 }
 
 .interact img:hover
 {
     transform: scale(1.1);
+}
+
+
+.misc
+{
+    background-color: #2E2C2F;
+    grid-column: 3;
+    grid-row: 2/-1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 40px;
+}
+
+.announcement,.trending
+{
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement span, .trending span
+{
+    color: white;
+    margin-top: 12px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    /* argin-bottom: 20px;m */
+    gap: 20px;
+}
+
+.announcement_card, .trending_card
+{
+    background-color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 12px;
+    /* justify-self: center; */
+    /* height: 200px; */
+
+}
+
+#item{
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+#item:last-child {
+    border-bottom: none;
+}
+
+#item span
+{
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+
+#item p
+{
+    gap: 2px;
+    font-size: 12px;
+}
+
+.trending 
+{
+    gap: 12px;
+}
+
+#personnel
+{
+    /* gap: 5px */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+span#at
+{
+    color: black;
+    font-size: 13px;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+span#name
+{
+    color: grey;
+    font-size: 13px;
+    margin-top: auto;
+}
+
+#personnel #text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    /* margin-right: auto; */
+    /* align-items: center; */
+}
+
+.trending{
+    margin-bottom: 25px;
 }
